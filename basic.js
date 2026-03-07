@@ -19,3 +19,21 @@ var e = 55;
     console.log(e);
 } 
  console.log(e);
+
+let x = 23;
+let y = "Himanshu";
+let k = true;
+let q = undefined;
+let r = null;
+console.log(x,y,k,q,r);
+
+console.log(typeof x,typeof y,typeof k,typeof q,typeof r);
+
+let o = {
+    name: "Himanshu",
+    age: 24,
+    "job role" : "Engineering"
+}
+o.salary = "100Crores";
+
+console.log(o);
