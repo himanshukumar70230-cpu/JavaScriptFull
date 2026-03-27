@@ -16,6 +16,13 @@ function add(a,b){
 }
 add(2,3);
 let result = add(10,2);
-console.log(`The remainder is ${result}`)
+console.log(`The remainder is ${result}`);
 
-//arrow function
+
+function addTwoNumber(number1,number2){
+  return number1+number2;
+
+}
+
+let Sum = addTwoNumber(3,4);
+console.log(Sum);
