@@ -4,10 +4,16 @@ const user = {
 
     welcomeMessage: function(){
         console.log(`${this.username},Welcome to website`)
+    },
+
+    WelcomeBhai: ()=>{
+        console.log(`${this.username},Welcome to Goa Bhai`) 
     }
 }
 
 user.welcomeMessage();
+
+user.WelcomeBhai();
 
 user.username = "Sam";
 
