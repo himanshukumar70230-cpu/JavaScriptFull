@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: gray;">
+    <div>
+    <ul id="images">
+        <li><img src="https://imgs.search.brave.com/1yXRz0c5y_JmsmFLezRZj32rvbOQN6nlYQPROc4cBZg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/YWN0aXZld2lsZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTYvMDMvTXVzay1P/eGVuLTMwMHgyMDAu/anBn" width="200px" id="ox"></li>
+        <li> <img src="https://imgs.search.brave.com/38GrJlpkPC2taxmdFL--lFNpUkTvfAlVKjDPmV354c4/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly93d3cu/YWN0aXZld2lsZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTcvMDYvQS10by1a/LUFuaW1hbHMtay5q/cGc" width="400px" id="kangaroo" onclick="alert('kangaroo')"> </li>
+    </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('ox').onclick = function(){
+    //     alert("Ox Clicked")
+
+    // }
+
+    document.getElementById('images').addEventListener('click',function(e){
+        alert("owl clicked again")
+        console.log('images is selected from list');
+        // e.preventDefault();
+        // e.stopPropagation();
+
+    },false)
+
+    document.getElementById('ox').addEventListener('click',function (e) {
+        console.log('Ox is clicked')
+        // e.preventDefault();
+    })
+</script>
+</html>
