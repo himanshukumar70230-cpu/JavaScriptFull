@@ -10,6 +10,8 @@
     <ul id="images">
         <li><img src="https://imgs.search.brave.com/1yXRz0c5y_JmsmFLezRZj32rvbOQN6nlYQPROc4cBZg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/YWN0aXZld2lsZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTYvMDMvTXVzay1P/eGVuLTMwMHgyMDAu/anBn" width="200px" id="ox"></li>
         <li> <img src="https://imgs.search.brave.com/38GrJlpkPC2taxmdFL--lFNpUkTvfAlVKjDPmV354c4/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly93d3cu/YWN0aXZld2lsZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTcvMDYvQS10by1a/LUFuaW1hbHMtay5q/cGc" width="400px" id="kangaroo" onclick="alert('kangaroo')"> </li>
+        <li><img src="https://imgs.search.brave.com/z2msVg4nPIDneHFM6jlhFgAgqQiktmiepNUnwMiISVI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTMw/Mjk3NDY4Mi9waG90/by9mZW1hbGUtZXhw/bG9yZXItd2Fsa2lu/Zy1pbi1mb3Jlc3Qt/ZHVyaW5nLXN1bnNl/dC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9RUg3VzNXNjBt/cjFIc0hXQjcyNnda/UkZpYU93Z2tscVcx/eEFEWkwxcE01UT0" width="200px"></li>
+        <i> <a href="https://www.google.com/?zx=1780676399908" id="google">Google</a> </i>
     </ul>
     </div>
 </body>
@@ -17,19 +19,38 @@
     // document.getElementById('ox').onclick = function(){
     //     alert("Ox Clicked")
 
-    // }
+    // // }
 
-    document.getElementById('images').addEventListener('click',function(e){
-        alert("owl clicked again")
-        console.log('images is selected from list');
-        // e.preventDefault();
-        // e.stopPropagation();
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     alert("owl clicked again")
+    //     console.log('images is selected from list');
+    //     // e.preventDefault();
+    //     // e.stopPropagation();
 
+    // },false)
+
+    // document.getElementById('ox').addEventListener('click',function (e) {
+    //     console.log('Ox is clicked')
+    //     // e.preventDefault();
+    // })
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     console.log("google Clicked")
+    //     e.preventDefault();
+    // })
+    // document.querySelector('#images').addEventListener('click',function(e){
+    //     console.log(e.target.parentNode);
+    //     let removeIt = e.target.parentNode;
+    //     removeIt.remove();
+    // },false)
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if(tagName ==="IMG"){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+        }
     },false)
 
-    document.getElementById('ox').addEventListener('click',function (e) {
-        console.log('Ox is clicked')
-        // e.preventDefault();
-    })
 </script>
 </html>
